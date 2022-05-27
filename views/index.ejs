@@ -10,13 +10,13 @@
   </head>
   <body>
     <h1>Haikus for Mona</h1>
-    <div>
+    <div class="wrapper">
       <% for(var i=0; i < haikus.length; i++) { %>
-        <img
+        <div 
+          class="haiku-containers haiku-<%= i%2 == 0 ? 'even' : 'odd' %>">
+          <img
           class="mona-images"
           src="images/<%= haikus[i].image %>" />
-        <div 
-          class="haiku-containers">
           <p 
             class="haikus"
           ><%- haikus[i].text %></p>

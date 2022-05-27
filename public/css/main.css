@@ -1,11 +1,11 @@
 body {
-    background-color: #2a2b2f; 
+    background-color: #1c0027; 
     display: flex; 
     flex-direction: column;
     justify-content: center; 
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
-    color: #fff;
+    color: rgb(194, 240, 255);
     text-align:center;
 }
 
@@ -17,6 +17,20 @@ body {
 
 .haiku-containers {
     padding: 10px 0px 20px 0px;
+    clear: both;
+}
+.wrapper {
+    min-width: 40em;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.haiku-even {
+    float: left;
+}
+.haiku-odd {
+    float: right;
 }
 
 .haikus {
